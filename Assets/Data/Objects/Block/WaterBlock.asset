@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: WaterBlock
   m_EditorClassIdentifier: Assembly-CSharp::BlockData
   id: W
+  blockType: 1
   prefab: {fileID: 6926777017554384409, guid: eea928836bf6f5448b838e9fd6233172, type: 3}

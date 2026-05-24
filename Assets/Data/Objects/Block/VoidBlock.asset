@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: VoidBlock
   m_EditorClassIdentifier: Assembly-CSharp::BlockData
   id: V
+  blockType: 1
   prefab: {fileID: 6118246923376817543, guid: b99461732f2619f4c9e0c03a8ef2eddd, type: 3}

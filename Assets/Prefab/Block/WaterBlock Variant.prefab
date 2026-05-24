@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &4009518216899136030
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1331347181846435420, guid: ab0b4fe6518ca2144a01fbdd2dd295f5, type: 3}
+      propertyPath: data
+      value: 
+      objectReference: {fileID: 11400000, guid: 8de2f9afc42fb704d8e7016ebbdf3901, type: 2}
+    - target: {fileID: 6306290088490843143, guid: ab0b4fe6518ca2144a01fbdd2dd295f5, type: 3}
+      propertyPath: m_Name
+      value: WaterBlock Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 7022952725512405206, guid: ab0b4fe6518ca2144a01fbdd2dd295f5, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 1e3ff5fa7251eae46953bbf93a6cd485, type: 2}
+    - target: {fileID: 7728069392524271755, guid: ab0b4fe6518ca2144a01fbdd2dd295f5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7728069392524271755, guid: ab0b4fe6518ca2144a01fbdd2dd295f5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7728069392524271755, guid: ab0b4fe6518ca2144a01fbdd2dd295f5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7728069392524271755, guid: ab0b4fe6518ca2144a01fbdd2dd295f5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7728069392524271755, guid: ab0b4fe6518ca2144a01fbdd2dd295f5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7728069392524271755, guid: ab0b4fe6518ca2144a01fbdd2dd295f5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7728069392524271755, guid: ab0b4fe6518ca2144a01fbdd2dd295f5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7728069392524271755, guid: ab0b4fe6518ca2144a01fbdd2dd295f5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7728069392524271755, guid: ab0b4fe6518ca2144a01fbdd2dd295f5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7728069392524271755, guid: ab0b4fe6518ca2144a01fbdd2dd295f5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1331347181846435420, guid: ab0b4fe6518ca2144a01fbdd2dd295f5, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6306290088490843143, guid: ab0b4fe6518ca2144a01fbdd2dd295f5, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6925510537764777220}
+  m_SourcePrefab: {fileID: 100100000, guid: ab0b4fe6518ca2144a01fbdd2dd295f5, type: 3}
+--- !u!1 &6926777017554384409 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6306290088490843143, guid: ab0b4fe6518ca2144a01fbdd2dd295f5, type: 3}
+  m_PrefabInstance: {fileID: 4009518216899136030}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6925510537764777220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6926777017554384409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 135b41afaeee0214386ff5aaed33028f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WaterBlock
+  data: {fileID: 11400000, guid: 8de2f9afc42fb704d8e7016ebbdf3901, type: 2}
+  blockManager: {fileID: 0}
+  spawnWaterTimer: 5

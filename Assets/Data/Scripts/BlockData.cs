@@ -4,9 +4,13 @@ using UnityEngine;
 public class BlockData : ScriptableObject
 {
     public string id;
+    public BlockType blockType;
     public GameObject prefab;
-
-
     
 
+}
+public enum BlockType
+{
+    full,
+    transparent
 }
