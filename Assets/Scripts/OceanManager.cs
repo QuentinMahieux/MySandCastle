@@ -4,7 +4,13 @@ public class OceanManager : MonoBehaviour
 {
     public static OceanManager instance;
 
-    public float[] speedLevel;
+    [Header("Settings")]
+    public AnimationCurve speedLevel;
+    [Range(0, 100)]
+    public int chanceToDespawn = 10;
+    public int damage = 1;
+    
+    [Header("Information")]
     public int currentWaterLevel;
 
     void Awake()

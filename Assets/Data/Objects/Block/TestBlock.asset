@@ -13,4 +13,6 @@ MonoBehaviour:
   m_Name: TestBlock
   m_EditorClassIdentifier: Assembly-CSharp::BlockData
   id: T
-  prefab: {fileID: 6306290088490843143, guid: ab0b4fe6518ca2144a01fbdd2dd295f5, type: 3}
+  blockType: 0
+  isDestroyeble: 0
+  durability: 0

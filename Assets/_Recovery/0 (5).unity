@@ -675,7 +675,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  chanceToDespawn: 51
+  chanceToDespawn: 69
   damage: 1
   currentWaterLevel: 0
 --- !u!1 &832575517

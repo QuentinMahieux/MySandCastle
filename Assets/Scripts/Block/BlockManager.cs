@@ -6,6 +6,9 @@ public class BlockManager : MonoBehaviour
     public Vector3 coordonee;
     public DefaultBlock actualBlock;
     
+    [Header("Durability")]
+    public int currentDurability;
+    
     [Header("Block")]
     public DefaultBlock[] blocks;
     
@@ -104,7 +107,7 @@ public class BlockManager : MonoBehaviour
                 Gravity();
             }
         }
-        
+        if(YN.block) YN.block.CanPlaceBlock();
     }
 
     public void ChangeBlock(string id)
@@ -116,6 +119,7 @@ public class BlockManager : MonoBehaviour
             {
                 block.gameObject.SetActive(true);
                 actualBlock = block;
+                currentDurability = actualBlock.data.durability;
             }
         }
         Gravity();
@@ -139,6 +143,16 @@ public class BlockManager : MonoBehaviour
         if (actualBlock.data.blockType == BlockType.full && YP.block)
         {
             if (YP.block.actualBlock.data.id == "V") YP.block.ChangeBlock("C");
+        }
+    }
+
+    public void TakeDamage(int damage)
+    {
+        if (actualBlock.data.isDestroyeble)
+        {
+            currentDurability -= damage;
+            
+            if(currentDurability <= 0) RemoveBlock(0);
         }
     }
     

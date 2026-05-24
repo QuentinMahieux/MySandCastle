@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &4009518216899136030
+--- !u!1001 &4758346042279438215
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -11,30 +11,30 @@ PrefabInstance:
     - target: {fileID: 1331347181846435420, guid: ab0b4fe6518ca2144a01fbdd2dd295f5, type: 3}
       propertyPath: data
       value: 
-      objectReference: {fileID: 11400000, guid: 8de2f9afc42fb704d8e7016ebbdf3901, type: 2}
+      objectReference: {fileID: 11400000, guid: f791b753261c82a44987465f1aac272a, type: 2}
     - target: {fileID: 5588485838289242973, guid: ab0b4fe6518ca2144a01fbdd2dd295f5, type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6306290088490843143, guid: ab0b4fe6518ca2144a01fbdd2dd295f5, type: 3}
       propertyPath: m_Name
-      value: WaterBlock Variant
+      value: WaterSource Variant
       objectReference: {fileID: 0}
     - target: {fileID: 7022952725512405206, guid: ab0b4fe6518ca2144a01fbdd2dd295f5, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 1e3ff5fa7251eae46953bbf93a6cd485, type: 2}
+      objectReference: {fileID: 2100000, guid: 5e44c4868e72318488cd749aa171bfee, type: 2}
     - target: {fileID: 7728069392524271755, guid: ab0b4fe6518ca2144a01fbdd2dd295f5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 53.73339
       objectReference: {fileID: 0}
     - target: {fileID: 7728069392524271755, guid: ab0b4fe6518ca2144a01fbdd2dd295f5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0
+      value: -51.68506
       objectReference: {fileID: 0}
     - target: {fileID: 7728069392524271755, guid: ab0b4fe6518ca2144a01fbdd2dd295f5, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 16.43751
       objectReference: {fileID: 0}
     - target: {fileID: 7728069392524271755, guid: ab0b4fe6518ca2144a01fbdd2dd295f5, type: 3}
       propertyPath: m_LocalRotation.w
@@ -71,26 +71,26 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 6306290088490843143, guid: ab0b4fe6518ca2144a01fbdd2dd295f5, type: 3}
       insertIndex: 4
-      addedObject: {fileID: 6925510537764777220}
+      addedObject: {fileID: 7776503437152521608}
   m_SourcePrefab: {fileID: 100100000, guid: ab0b4fe6518ca2144a01fbdd2dd295f5, type: 3}
---- !u!1 &6926777017554384409 stripped
+--- !u!1 &1553033715614194560 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6306290088490843143, guid: ab0b4fe6518ca2144a01fbdd2dd295f5, type: 3}
-  m_PrefabInstance: {fileID: 4009518216899136030}
+  m_PrefabInstance: {fileID: 4758346042279438215}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &6925510537764777220
+--- !u!114 &7776503437152521608
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6926777017554384409}
+  m_GameObject: {fileID: 1553033715614194560}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 135b41afaeee0214386ff5aaed33028f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WaterBlock
-  data: {fileID: 11400000, guid: 8de2f9afc42fb704d8e7016ebbdf3901, type: 2}
+  data: {fileID: 11400000, guid: f791b753261c82a44987465f1aac272a, type: 2}
   blockManager: {fileID: 0}
-  isInfiny: 0
-  waterPrefab: {fileID: 0}
+  isInfiny: 1
+  waterPrefab: {fileID: 6926777017554384409, guid: eea928836bf6f5448b838e9fd6233172, type: 3}

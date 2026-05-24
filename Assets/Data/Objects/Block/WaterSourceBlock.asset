@@ -10,9 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0c178c3bdb4714c42ac6f9d21db1dc13, type: 3}
-  m_Name: BedRockBlock
+  m_Name: WaterSourceBlock
   m_EditorClassIdentifier: Assembly-CSharp::BlockData
-  id: B
+  id: I
   blockType: 0
+  isWater: 1
   isDestroyeble: 0
   durability: 0

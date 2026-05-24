@@ -13,4 +13,6 @@ MonoBehaviour:
   m_Name: SandBlock
   m_EditorClassIdentifier: Assembly-CSharp::BlockData
   id: S
-  prefab: {fileID: 6856720849844873546, guid: 4b5a8ae2acb6a7f4ab3fdcdaa2f8f21e, type: 3}
+  blockType: 0
+  isDestroyeble: 0
+  durability: 0

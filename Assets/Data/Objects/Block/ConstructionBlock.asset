@@ -14,4 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BlockData
   id: C
   blockType: 1
-  prefab: {fileID: 6118246923376817543, guid: 78f252d7b0b4954409f636f6dedf888a, type: 3}
+  isDestroyeble: 0
+  durability: 0
