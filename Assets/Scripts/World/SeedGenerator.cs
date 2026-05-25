@@ -49,12 +49,12 @@ public class SeedGenerator : MonoBehaviour
         return true;
     }
 
-    public string CreateSeed(List<BlockManager> blocks)
+    public string CreateSeed(Dictionary<Vector3Int, BlockManager> blocks)
     {
         string seed = "";
         foreach (var block in blocks)
         {
-            seed += block.actualBlock.data.id;
+            seed += block.Value.actualBlock.data.id;
         }
         return seed;
     }

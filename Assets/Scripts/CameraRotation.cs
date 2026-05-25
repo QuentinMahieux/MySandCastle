@@ -15,6 +15,9 @@ public class CameraRotation : MonoBehaviour
 
     private void Update()
     {
+        transform.position = target.position -  transform.forward * distance;
+
+        
         if (Input.GetKey(KeyCode.A))
         {
             transform.RotateAround(target.position, Vector3.up, rotateSpeed * Time.deltaTime);

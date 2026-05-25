@@ -6,7 +6,8 @@ public class DefaultBlock : MonoBehaviour
     public BlockManager blockManager;
     public virtual void ClickLeft()
     {
-        blockManager.RemoveBlock(0);
+        if (GameManager.instance.creative) blockManager.RemoveBlock(0);
+        else if(!GameManager.instance.currentBlockData) blockManager.TakeBlock();
     }
 
     public virtual void ClickRight()

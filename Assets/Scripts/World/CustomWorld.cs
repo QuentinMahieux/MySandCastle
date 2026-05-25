@@ -6,7 +6,7 @@ public class CustomWorld : MonoBehaviour
     public static CustomWorld instance;
     [Header("Settings")]
     public Vector3 customSize;
-    public int sandHight = 2;
+    public SurfaceBlock[] surfaceBlocks;
     public string customCode;
     public BlockData buildingBlock;
 
@@ -34,11 +34,14 @@ public class CustomWorld : MonoBehaviour
             seed += "B";
         }
 
-        for (int i = 0; i < sandHight; i++)
+        for (int i = 0; i < surfaceBlocks.Length; i++)
         {
-            for (int j = 0; j < surface; j++)
+            for (int j = 0; j < surfaceBlocks[i].hight; j++)
             {
-                seed += "S";
+                for (int k = 0; k < surface; k++)
+                {
+                    seed += surfaceBlocks[i].data.id;
+                }
             }
         }
         
@@ -55,4 +58,11 @@ public class CustomWorld : MonoBehaviour
     {
         WorldGenerator.instance.ChargeWorld(customCode);
     }
+}
+
+[System.Serializable]
+public class SurfaceBlock
+{
+    public BlockData data;
+    public int hight = 1;
 }

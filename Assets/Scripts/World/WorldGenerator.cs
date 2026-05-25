@@ -9,13 +9,13 @@ public class WorldGenerator : MonoBehaviour
 
     [Header("Generation Settings")]
     private Vector3 sizeWorld =  Vector3.zero;
-    public bool creative = false;
 
     public float distanceUnderBlock = 1f;
 
     [Header("Block")]
     public GameObject blockPrefab;
-    public List<BlockManager> blocks;
+    public Dictionary<Vector3Int, BlockManager> blocks = new Dictionary<Vector3Int, BlockManager>();
+
 
     [Header("Interface")] 
     public Slider sliderLoading;
@@ -88,11 +88,9 @@ public class WorldGenerator : MonoBehaviour
             }
             distanceY += distanceUnderBlock;
         }
-        yield return new WaitForSeconds(0.01f);
         sliderLoading.value = sliderLoading.maxValue;
         AddNeighbours();
         
-        yield return new WaitForSeconds(0.05f);
         sliderLoading.gameObject.SetActive(false);
     }
 
@@ -100,7 +98,7 @@ public class WorldGenerator : MonoBehaviour
     {
         GameObject block = Instantiate(blockPrefab, new Vector3(distanceX, distanceY, distanceZ), Quaternion.identity);
         BlockManager blockComponent = block.GetComponent<BlockManager>();
-        blocks.Add(blockComponent);
+        blocks[new Vector3Int(x, y, z)] = blockComponent;
         
         blockComponent.Instantiate(x, y, z, id);
     }
@@ -109,7 +107,7 @@ public class WorldGenerator : MonoBehaviour
     
     public void AddNeighbours()
     {
-        foreach (BlockManager block in blocks)
+        foreach (BlockManager block in blocks.Values)
         {
             block.FindNeighbours();
         }
@@ -117,7 +115,7 @@ public class WorldGenerator : MonoBehaviour
 
     public BlockManager FindNeighbour(Vector3 neighbourCoordonee)
     {
-        foreach (BlockManager block in blocks)
+        foreach (BlockManager block in blocks.Values)
         {
             if (block.coordonee == neighbourCoordonee)
             {
